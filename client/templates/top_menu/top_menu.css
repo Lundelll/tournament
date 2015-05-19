@@ -1,0 +1,61 @@
+@font-face {
+  font-family: leagueGothic;
+  src: url("/fonts/leaguegothic-regular-webfont.ttf");
+}
+
+.navbar {
+  border: 0px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-default {
+  background-color: #2C3E50;
+  background-image: none;
+}
+
+.navbar-default .navbar-nav {
+  color: #FFFFFF;
+  font-family: "leagueGothic";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  font-family: "leagueGothic";
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  background-color: #387477;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav .navbar-right:hover,
+.navbar-default .navbar-nav .navbar-right:focus {
+  color: #FFFFFF;
+}
+
+#login-dropdown-list > a:hover,
+#login-dropdown-list > a:focus {
+  color: #FFFFFF;
+}
+
+#login-dropdown-list > .dropdown-toggle,
+#login-dropdown-list > .dropdown-toggle:hover,
+#login-dropdown-list > .dropdown-toggle:focus {
+  color: #FFFFFF;
+  background-color: #2C3E50; 
+}

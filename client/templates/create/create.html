@@ -1,0 +1,40 @@
+<template name="create">
+
+  <div class="temp">
+    <p>
+      Name: Type your name of the tournament.<br />
+      Type: Choose what type you want. <br />
+      > <strong>Group stage</strong> is a round robin tournament, all participants will face everyone else one time. <br />
+      > <strong>Single elimination</strong> is where one winner advances to go up against the winner of the other match until there is only one left. <br />
+      > <strong>Group stage and single elimination</strong> is when you want a group stage and single elemination for a qualification round and then everyone will <br />
+      Teams: Add a team on each row.
+    </p>
+  </div>
+  <div class="temp">
+  <form method="post" action="/">
+    <table id="create_table">
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td>
+          <select>
+            <option value="group_stage">Group stage</option>
+            <option value="single_elimination">Single elimination</option>
+            <option value="full_tournament">Group stage and single elimination</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Teams</td>
+        <td><input id="team_list" type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Create" name="create_tournament" /></td>
+      </tr>
+    </table>
+  </form>
+  </div>
+</template>
