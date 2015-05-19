@@ -3,16 +3,19 @@
     <div class="container">
       <a class="navbar-brand" href="/">TOURNAMENT</a>
       <ul class="nav navbar-nav">
-        <li class="active">
+        <li class="{{ active 'news' }}">
+          <a href="/news">NEWS</a>
+        </li>
+        <li class="{{ active 'create' }}">
           <a href="/create">CREATE</a>
         </li>
-        <li>
+        <li class="{{ active 'two' }}">
           <a href="/two">PAGETWO</a>
         </li>
-        <li>
+        <li class="{{ active 'three' }}">
           <a href="/three">PAGETHREE</a>
         </li>
-        <li>
+        <li class="{{ active 'four' }}">
           <a href="/four">PAGEFOUR</a>
         </li>
       </ul>
