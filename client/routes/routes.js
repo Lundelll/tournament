@@ -1,39 +1,39 @@
 Router.configure({
-  layoutTemplate: 'layout'
+    layoutTemplate: 'layout'
 });
 
-Router.onBeforeAction(function() {
-  if(Router.current().route.getName() === 'create') {
-    if(!Meteor.user()) {
-      this.render('errorNotLoggedIn');
+Router.onBeforeAction(function () {
+    if (Router.current().route.getName() === 'create') {
+        if (!Meteor.user()) {
+            this.render('errorNotLoggedIn');
+        } else {
+            this.render('create');
+        }
     } else {
-      this.next();
+        this.next();
     }
-  } else {
-    this.next();
-  }
 });
 
 Router.route('/', function () {
-  this.render('news');
+    this.render('news');
 });
 
 Router.route('/news', function () {
-  this.render('news');
+    this.render('news');
 });
 
 Router.route('/create', function () {
-  this.render('create');
+    this.render('create');
 });
 
-Router.route('/two', function () {
-  this.render('two');
+Router.route('/search', function () {
+    this.render('search');
 });
 
 Router.route('/three', function () {
-  this.render('three');
+    this.render('three');
 });
 
 Router.route('/four', function () {
-  this.render('four');
+    this.render('four');
 });

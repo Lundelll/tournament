@@ -1,28 +1,28 @@
 <template name="top_menu">
-  <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="/">TOURNAMENT</a>
-      <ul class="nav navbar-nav">
-        <li class="{{ active 'news' }}">
-          <a href="/news">NEWS</a>
-        </li>
-        <li class="{{ active 'create' }}">
-          <a href="/create">CREATE</a>
-        </li>
-        <li class="{{ active 'two' }}">
-          <a href="/two">PAGETWO</a>
-        </li>
-        <li class="{{ active 'three' }}">
-          <a href="/three">PAGETHREE</a>
-        </li>
-        <li class="{{ active 'four' }}">
-          <a href="/four">PAGEFOUR</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-          {{> loginButtons}}
-      </ul>
-    </div>
-  </nav>
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">TOURNAMENT</a>
+            <ul class="nav navbar-nav">
+                <li class="{{ active 'news' }}">
+                    <a href="/news">NEWS</a>
+                </li>
+                <li class="{{ active 'create' }}">
+                    <a href="/create">CREATE</a>
+                </li>
+                <li class="{{ active 'search' }}">
+                    <a href="/search">SEARCH</a>
+                </li>
+                <li class="{{ active 'three' }}">
+                    <a href="/three">PAGETHREE</a>
+                </li>
+                <li class="{{ active 'four' }}">
+                    <a href="/four">PAGEFOUR</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons}}
+            </ul>
+        </div>
+    </nav>
 </template>
 
