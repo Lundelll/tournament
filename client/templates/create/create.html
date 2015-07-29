@@ -14,11 +14,14 @@
         </p>
     </div>
     <div class="temp">
-        <form method="post" action="/">
+        <form method="post" class="team-list" action="/">
             <table id="create_table">
                 <tr>
+                    <td class="error-msg-tournamentName"></td>
+                </tr>
+                <tr>
                     <td>Name</td>
-                    <td><input type="text" name="name"/></td>
+                    <td><input type="text" name="tournamentName"/></td>
                 </tr>
                 <tr>
                     <td>Type</td>
@@ -31,6 +34,9 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="error-msg-addTeam"></td>
+                </tr>
+                <tr>
                     <td>Teams</td>
                     <td><input type="text" name="txtAddTeam" id="txtAddTeam"/><input type="submit" value="Add"
                                                                                      class="btnAddTeam"/></td>
@@ -40,15 +46,15 @@
                 </tr>
             </table>
         </form>
-        {{#unless teamList}}
+        {{#if showTeamList}}
             <div>
                 <h3>Teams:</h3><br/>
                 <ul>
-                    {{#each teamList}}
-                        <li>{{this}}</li>
-                    {{/each}}
+                    <!--{{#each showTeamList}}-->
+                        <!--<li>{{.}}</li>-->
+                    <!--{{/each}}-->
                 </ul>
             </div>
-        {{/unless}}
+        {{/if}}
     </div>
 </template>
