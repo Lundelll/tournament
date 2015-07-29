@@ -40,15 +40,15 @@
                 </tr>
             </table>
         </form>
-      {{#unless teamList}}
-          <div>
-              <h3>Teams:</h3><br/>
-              <ul>
-                {{#each teamList}}
-                    <li>{{this}}</li>
-                {{/each}}
-              </ul>
-          </div>
-      {{/unless}}
+        {{#unless teamList}}
+            <div>
+                <h3>Teams:</h3><br/>
+                <ul>
+                    {{#each teamList}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/unless}}
     </div>
 </template>

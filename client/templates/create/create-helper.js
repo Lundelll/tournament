@@ -9,13 +9,12 @@ if (Meteor.isClient) {
 
             var teamName = document.getElementById('txtAddTeam');
 
-            if (teamName.value != '') {
+            if (teamName.value !== '') {
                 console.log(teamName.value);
+                document.getElementById('txtAddTeam').value = '';
             } else {
                 console.log('LOL! Silly human, you need a name on your team!');
             }
-
-            document.getElementById('txtAddTeam').value = '';
         }
     });
 }

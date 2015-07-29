@@ -2,7 +2,6 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/client/client.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/client/routes/routes.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/style.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/templates/create/create.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/templates/create/create.html" charset="UTF-8" />
@@ -13,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/client/templates/test/one.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/templates/top_menu/top_menu-helper.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/templates/top_menu/top_menu.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/routes.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/server.js" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
